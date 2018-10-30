@@ -65,7 +65,7 @@ def insertDB(content):
 
     cursor = connection.cursor()
     try:
-        cursor.executemany('insert into us_FinData (name,d1,d2,d3,d4,d5) values (%s,%s,%s,%s,%s,%s)', content)
+        cursor.executemany('insert into us_FinData_sina (name,d1,d2,d3,d4,d5) values (%s,%s,%s,%s,%s,%s)', content)
         connection.commit()
         connection.close()
         print('向MySQL中添加数据成功！')
@@ -84,7 +84,6 @@ if __name__ == '__main__':
         content = parse_stock_note(html)
         insertDB(content)
         print(datetime.datetime.now())
-        time.sleep(1)
 
 
 
@@ -98,9 +97,9 @@ if __name__ == '__main__':
 # d4 varchar(10),
 # d5 varchar(10)
 #  ) engine=InnoDB default charset=utf8;
+
 #
-#
-# drop table us_FinData;
+# drop table us_FinData_sina;
 
 
 
