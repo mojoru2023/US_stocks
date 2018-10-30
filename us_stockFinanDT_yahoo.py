@@ -4,27 +4,25 @@ import re
 import time
 
 import pymysql
+import requests
+from requests.exceptions import RequestException
+from multiprocessing import Pool
 
 from lxml import etree
-from selenium import webdriver
-
-driver = webdriver.Chrome()
 
 
-def get_first_page(url):
 
-    driver.get(url)
-    driver.find_element_by_xpath('//*[@id="fin-srch-assist"]/input').send_keys("appl")  # 用户名
-    time.sleep(2)
-    driver.find_element_by_xpath('//*[@id="search-button"]').click()  # 用户名
-    time.sleep(2)
-    driver.find_element_by_xpath('//*[@id="quote-nav"]/ul/li[7]/a/span').click()  # 用户名
-    time.sleep(2)
-
-    driver.find_element_by_xpath('//*[@id="Col1-1-Financials-Proxy"]/section/div[1]/div[2]/button/div/span').click()  # 用户名
-    html = driver.page_source
-    return html
-
+def call_page(url):
+    headers = {
+        'user-agent': 'Mozilla/5.0 (Windows; U; Windows NT 6.0 x64; en-US; rv:1.9pre) Gecko/2008072421 Minefield/3.0.2pre'
+    }
+    try:
+        response = requests.get(url,headers=headers)
+        if response.status_code == 200:
+            return response.text
+        return None
+    except RequestException:
+        return None
 
 
 # 可以尝试第二种解析方式，更加容易做计算
@@ -37,17 +35,16 @@ def parse_stock_note(html):
     d2 = selector.xpath('//*[@id="Col1-1-Financials-Proxy"]/section/div[3]/table/tbody/tr[26]/td[3]/span/text()')
     d3 = selector.xpath('//*[@id="Col1-1-Financials-Proxy"]/section/div[3]/table/tbody/tr[26]/td[4]/span/text()')
     d4 = selector.xpath('//*[@id="Col1-1-Financials-Proxy"]/section/div[3]/table/tbody/tr[26]/td[5]/span/text()')
-    d1_sp = "".join(d1.split(","))
-    return name
+    d_sp = d1 + d2 + d3 + d4
+    for item in d_sp:
+        i_sp = "".join(item.split(','))
+        last_list.append(i_sp)
+    all_content = name + last_list
+    all_content_tuple = tuple(all_content)
+    big_list.append(all_content_tuple)
+    return big_list
 
 
-    # big_tuple_list = list(contents)
-    # for i in big_tuple_list:
-    #     b = "".join(re.split(r'亿|万|\s',i))  #同时去除了空格，亿，万３个标签
-    #     big_list.append(b)
-    # big_list_tuple = tuple(big_list)
-    # last_list.append(big_list_tuple)
-    # return last_list
 
 
 
@@ -61,14 +58,14 @@ def Python_sel_Mysql():
                                  charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
     cur = connection.cursor()
     #sql 语句
-    for i in range(1,5967):
+    for i in range(1489,5967):
         sql = 'select code from us_stock where id = %s ' % i
         # #执行sql语句
         cur.execute(sql)
         # #获取所有记录列表
         data = cur.fetchone()
         num = data['code']
-        url = 'http://quotes.sina.com.cn/usstock/hq/income.php?s=' + str(num) +'&t=quarter'
+        url = 'https://finance.yahoo.com/quote/' + str(num) + '/financials?p=' + str(num)
         yield url
 
 
@@ -79,7 +76,7 @@ def insertDB(content):
 
     cursor = connection.cursor()
     try:
-        cursor.executemany('insert into us_FinData (name,d1,d2,d3,d4,d5) values (%s,%s,%s,%s,%s,%s)', content)
+        cursor.executemany('insert into us_FinData_yahoo (name,d1,d2,d3,d4) values (%s,%s,%s,%s,%s)', content)
         connection.commit()
         connection.close()
         print('向MySQL中添加数据成功！')
@@ -87,47 +84,33 @@ def insertDB(content):
         pass
 
 
-url = 'https://finance.yahoo.com'
-
-html = get_first_page(url)
-print(html)
-# content = parse_stock_note(html)
-# print(content)
 
 
-# #
-# if __name__ == '__main__':
-#     for url_str in Python_sel_Mysql():
-#         html = get_first_page(url_str)
-#         content = parse_stock_note(html)
-#         insertDB(content)
-#         print(datetime.datetime.now())
-#         time.sleep(1)
+
+
+#
+if __name__ == '__main__':
+    pool = Pool(4)
+    for url_str in Python_sel_Mysql():
+        html = call_page(url_str)
+        content = parse_stock_note(html)
+        insertDB(content)
+        print(datetime.datetime.now())
+
 
 
 
 #
 # create table us_FinData_yahoo(
 # id int not null primary key auto_increment,
-# name varchar(80),
-# d1 varchar(10),
-# d2 varchar(10),
-# d3 varchar(10),
-# d4 varchar(10),
-# d5 varchar(10)
+# name varchar(120),
+# d1 varchar(20),
+# d2 varchar(20),
+# d3 varchar(20),
+# d4 varchar(20)
 #  ) engine=InnoDB default charset=utf8;
 #
 #
-# drop table us_FinData;
+# drop table us_FinData_yahoo;
 
 
-
-
-
-# a= ['6亿','6万','8亿']
-# t = []
-# for i in a:
-#     b = "".join(re.split(r'亿|万|\s',a))
-#     t.append(b)
-#
-# print(t)  # t = [6,6,8]
