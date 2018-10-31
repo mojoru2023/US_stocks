@@ -6,7 +6,6 @@ import time
 import pymysql
 import requests
 from requests.exceptions import RequestException
-from multiprocessing import Pool
 
 from lxml import etree
 
@@ -90,7 +89,6 @@ def insertDB(content):
 
 #
 if __name__ == '__main__':
-    pool = Pool(4)
     for url_str in Python_sel_Mysql():
         html = call_page(url_str)
         content = parse_stock_note(html)
@@ -109,8 +107,8 @@ if __name__ == '__main__':
 # d3 varchar(20),
 # d4 varchar(20)
 #  ) engine=InnoDB default charset=utf8;
+# #
 #
-#
-# drop table us_FinData_yahoo;
+# drop table us_FinData_yahoo_year;
 
 
