@@ -58,7 +58,7 @@ def Python_sel_Mysql():
                                  charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
     cur = connection.cursor()
     #sql 语句
-    for i in range(1489,5967):
+    for i in range(1,5967):
         sql = 'select code from us_stock where id = %s ' % i
         # #执行sql语句
         cur.execute(sql)
@@ -76,7 +76,7 @@ def insertDB(content):
 
     cursor = connection.cursor()
     try:
-        cursor.executemany('insert into us_FinData_yahoo (name,d1,d2,d3,d4) values (%s,%s,%s,%s,%s)', content)
+        cursor.executemany('insert into us_FinData_yahoo_year (name,d1,d2,d3,d4) values (%s,%s,%s,%s,%s)', content)
         connection.commit()
         connection.close()
         print('向MySQL中添加数据成功！')
@@ -101,7 +101,7 @@ if __name__ == '__main__':
 
 
 #
-# create table us_FinData_yahoo(
+# create table us_FinData_yahoo_year(
 # id int not null primary key auto_increment,
 # name varchar(120),
 # d1 varchar(20),

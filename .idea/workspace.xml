@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/US_stocks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/US_stocks.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us_stockFinanDT_yahoo.py" beforeDir="false" afterPath="$PROJECT_DIR$/us_stockFinanDT_yahoo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/us_stockFinanDT_yahoo.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,30 +18,31 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.36" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="5" />
+          <entry key="py" value="8" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="5" />
+          <entry key="Python" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="747" />
+          <entry key="py" value="814" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="747" />
+          <entry key="Python" value="814" />
         </counts>
       </usages-collector>
     </session>
@@ -83,16 +84,34 @@
         <entry file="file://$PROJECT_DIR$/港股和美股链接.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="54" />
+              <caret line="16" column="47" selection-start-line="16" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/us_stockFinanDT_sina.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/us_stockFinanDT_yahoo_year.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/us_stockFinanDT_yahoo.py">
+        <entry file="file://$PROJECT_DIR$/us_stockFinanDT_yahoo_quarter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="101" selection-start-line="101" selection-end-line="112" />
+            <state relative-caret-position="119">
+              <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
               <folding>
                 <element signature="e#23#38#0" expanded="true" />
               </folding>
@@ -129,6 +148,8 @@
         <option value="$PROJECT_DIR$/us_stockFinanDT_sina.py" />
         <option value="$PROJECT_DIR$/us_stockFinanDT_xueqiu.py" />
         <option value="$PROJECT_DIR$/us_stockFinanDT_yahoo.py" />
+        <option value="$PROJECT_DIR$/us_stockFinanDT_yahoo_year.py" />
+        <option value="$PROJECT_DIR$/us_stockFinanDT_yahoo_quarter.py" />
       </list>
     </option>
   </component>
@@ -143,6 +164,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,7 +176,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.us_stockFinanDT_yahoo">
+  <component name="RunManager" selected="Python.us_stockFinanDT_yahoo_quarter">
     <configuration name="all_data_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="US_stocks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -260,7 +281,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="us_stock_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="us_stockFinanDT_yahoo_quarter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="US_stocks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -272,7 +293,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/us_stock_code.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/us_stockFinanDT_yahoo_quarter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -282,19 +303,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.us_stock_code" />
       <item itemvalue="Python.all_data_spider" />
       <item itemvalue="Python.us_stockFinanDT_yahoo" />
       <item itemvalue="Python.us_stockFinanDT_sina" />
       <item itemvalue="Python.us_stockFinanDT_xueqiu" />
+      <item itemvalue="Python.us_stockFinanDT_yahoo_quarter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.us_stockFinanDT_yahoo_quarter" />
         <item itemvalue="Python.us_stockFinanDT_yahoo" />
         <item itemvalue="Python.us_stockFinanDT_xueqiu" />
         <item itemvalue="Python.us_stockFinanDT_sina" />
         <item itemvalue="Python.all_data_spider" />
-        <item itemvalue="Python.us_stock_code" />
       </list>
     </recent_temporary>
   </component>
@@ -312,14 +333,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="850" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="718" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24982357" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24924242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.24965133" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.24957265" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -347,25 +368,42 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/all_data_spider.py" />
-    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_sina.py">
+    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_xueqiu.py" />
+    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_yahoo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        <state relative-caret-position="1598">
+          <caret line="101" selection-start-line="101" selection-end-line="112" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_xueqiu.py" />
     <entry file="file://$PROJECT_DIR$/港股和美股链接.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="54" />
+          <caret line="16" column="47" selection-start-line="16" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_yahoo.py">
+    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_yahoo_year.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="101" selection-start-line="101" selection-end-line="112" />
+        <state relative-caret-position="306">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_sina.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_yahoo_quarter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
           <folding>
             <element signature="e#23#38#0" expanded="true" />
           </folding>
