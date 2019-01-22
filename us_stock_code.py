@@ -38,7 +38,6 @@ def next_page():
 
 
 
-
 # 用遍历打开网页59次来处理
 
     # print(html)  #正则还是有问题，选择了一个动态变动的颜色标记是不好的 最近浏览不是每次都有的！所以用数字的颜色取判断吧
@@ -81,7 +80,7 @@ if __name__ == '__main__':
             insertDB(content)
             print(datetime.datetime.now())
 
-
+#
 # create table us_stock(
 # id int not null primary key auto_increment,
 # name varchar(88),

@@ -25,6 +25,9 @@ def call_page(url):
 
 
 # 可以尝试第二种解析方式，更加容易做计算
+# 可以尝试第二种解析方式，更加容易做计算
+# 净收入 d1距离最近，d5最远
+# 对于脚本的符合太大！所以季度和年度数据暂时不加入板块
 def parse_stock_note(html):
     big_list = []
     last_list = []
