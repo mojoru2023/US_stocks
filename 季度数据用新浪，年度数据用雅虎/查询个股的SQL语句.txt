@@ -1,0 +1,13 @@
+
+如何查询一个列表中的数据？(比如20个)(用or多个条件)
+相当于遍历一个条件列表，并按照市值排序 
+asc 从小到大
+desc 从大到小
+SELECT * FROM us_stock.us_stock where code="TLK"or code= "EC" 
+or code = "EC" 
+order by  market_value DESC ;
+
+
+or code = ""
+
+弄一个专门的sql文件存储查询语句

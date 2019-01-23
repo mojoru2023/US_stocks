@@ -80,7 +80,7 @@ if __name__ == '__main__':
             insertDB(content)
             print(datetime.datetime.now())
 
-#
+# #
 # create table us_stock(
 # id int not null primary key auto_increment,
 # name varchar(88),

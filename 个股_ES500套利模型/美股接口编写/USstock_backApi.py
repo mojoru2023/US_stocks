@@ -26,8 +26,8 @@ Base = declarative_base()
 
 # sqlalchemy 对已有表做操作需要先做一个映射类
 
-class A50_OneStock_PL(Base):
-    __tablename__ = 'A50_OneStock_PL'
+class OneStock_ES500_PL(Base):
+    __tablename__ = 'OneStock_ES500_PL'
     id = Column(Integer,primary_key=True,nullable=False, autoincrement=True)
     index_PL = Column(String(10),nullable=True)  # String在数据库中常见为varchar类型
     stock_PL = Column(String(10),nullable=True)  #
@@ -52,14 +52,14 @@ def index():
 
 # 使用接口后的渲染接口
 # 这还只是一个静态的页面,不会自助
-@app.route('/astock/v1')
+@app.route('/usstock/v1')
 def asVali():
-    return render_template('astock.html')
+    return render_template('us.html')
 
 
-@app.route('/astock/count')
+@app.route('/usstock/count')
 def asdata_count():
-    num = db.session.query(A50_OneStock_PL.profilo_PL_R).count()
+    num = db.session.query(OneStock_ES500_PL.profilo_PL_R).count()
     # return "'<h1>数据库的字段数为:% </h1>' % num "
     return jsonify({"数据库的字段总数":num})
 
@@ -68,10 +68,10 @@ def asdata_count():
 # 思考如何把查询的数据变成一个大字典！而不是若干个小字典！
 # 从数据库中一次全部查询展示成功
 # 数据接口,API
-@app.route('/astock', methods=['GET'])
+@app.route('/usstock', methods=['GET'])
 def asdata():
     big_list = []
-    pls = db.session.query(A50_OneStock_PL.profilo_PL_R).all()  # [[0.19],[0.19]] 需要两层遍历来做一个大列表
+    pls = db.session.query(OneStock_ES500_PL.profilo_PL_R).all()  # [[0.19],[0.19]] 需要两层遍历来做一个大列表
     for item in pls:
          for i in item:
              num_int = float(i)
@@ -93,9 +93,9 @@ def asdata():
 
 
 
-@app.route('/astock/ajax')
+@app.route('/usstock/ajax')
 def asdata_ajax():
-    return render_template('astock_ajax.html')
+    return render_template('usstock_ajax.html')
 
 
 
