@@ -49,7 +49,12 @@ def parse_html(html):  # 正则专门有反爬虫的布局设置，不适合爬�
     code = selector.xpath('//*[@id="data"]/table/tbody/tr/td[2]/a/text()')
     industry = selector.xpath('//*[@id="data"]/table/tbody/tr/td[5]/a/text()')
     market_value = selector.xpath('//*[@id="data"]/table/tbody/tr/th[6]/text()')
-    long_tuple = (i for i in zip(name, code,industry, market_value))
+    cut_d = []
+    for item in market_value:
+        t = "".join(item.split(","))
+        cut_d.append(t)
+
+    long_tuple = (i for i in zip(name, code,industry, cut_d))
     for i in long_tuple:
         big_list.append(i)
     return big_list
@@ -86,5 +91,8 @@ if __name__ == '__main__':
 # name varchar(88),
 # code varchar(20) ,
 # industry varchar(26),
-# market_value varchar(20)
+# market_value int
 # ) engine=InnoDB  charset=utf8;
+
+
+#  drop table us_stock;
