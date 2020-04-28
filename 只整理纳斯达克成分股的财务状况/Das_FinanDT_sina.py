@@ -11,9 +11,6 @@ from selenium import webdriver
 driver = webdriver.Chrome()
 
 
-
-
-
 def get_first_page(url):
 
     driver.get(url)

@@ -2,57 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c84c4138-2c8c-45e6-86ce-7c1498f36fde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/US_stocks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/US_stocks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us_stock_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/us_stock_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/us_stockFinanDT_sina.py" beforeDir="false" afterPath="$PROJECT_DIR$/us_stockFinanDT_sina.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/us_stock_code.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="91" selection-start-line="91" selection-end-line="92" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/同花顺美股整理/US_S_type.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-              <folding>
-                <element signature="e#23#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/us_stockFinanDT_yahoo_year.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1343">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/us_stockFinanDT_sina.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,34 +30,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/all_data_spider.py" />
-        <option value="$PROJECT_DIR$/us_stockFinanDT_xueqiu.py" />
-        <option value="$PROJECT_DIR$/us_stockFinanDT_yahoo.py" />
-        <option value="$PROJECT_DIR$/us_stockFinanDT_yahoo_quarter.py" />
-        <option value="$PROJECT_DIR$/../a50_onestock.py" />
-        <option value="$PROJECT_DIR$/../oneStock_FTSE100.py" />
-        <option value="$PROJECT_DIR$/us_stockFinanDT_yahoo_year.py" />
-        <option value="$PROJECT_DIR$/../MHI_OneStock.py" />
-        <option value="$PROJECT_DIR$/../J225_OneStock.py" />
-        <option value="$PROJECT_DIR$/个股_ES500套利模型/onestock——ES500.py" />
-        <option value="$PROJECT_DIR$/个股_ES500套利模型/美股股接口编写/USstock_backApi.py" />
-        <option value="$PROJECT_DIR$/个股_ES500套利模型/美股股接口编写/templates/usstock_ajax.html" />
-        <option value="$PROJECT_DIR$/个股_ES500套利模型/美股股接口编写/templates/usstock.html" />
-        <option value="$PROJECT_DIR$/个股_ES500套利模型/美股接口编写/static/usstock.js" />
-        <option value="$PROJECT_DIR$/Search.sql" />
-        <option value="$PROJECT_DIR$/个股_ES500套利模型/onestock_ES500.py" />
-        <option value="$PROJECT_DIR$/个股_ES500套利模型/美股接口编写/templates/usstock.html" />
-        <option value="$PROJECT_DIR$/个股_ES500套利模型/美股接口编写/templates/us.html" />
-        <option value="$PROJECT_DIR$/us_stock_code.py" />
-        <option value="$PROJECT_DIR$/us_stockFinanDT_sina.py" />
-        <option value="$PROJECT_DIR$/同花顺美股整理/US_S_type.py" />
-      </list>
-    </option>
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -112,62 +42,42 @@
     <option name="width" value="1287" />
     <option name="height" value="814" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="US_stocks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="US_stocks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="US_stocks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="US_stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="个股_ES500套利模型" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="US_stocks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="US_stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="同花顺美股整理" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="US_stocks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="US_stocks" type="462c0819:PsiDirectoryNode" />
-              <item name="季度数据用新浪，年度数据用雅虎" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1bAi7uEKyWRjuKSLJKN45PzhqMg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../J_stocks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.US_S_type">
+  <component name="RunManager" selected="Python.Nas_Mons">
+    <configuration name="Nas_Mons" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="US_stocks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/只看纳斯达克指数前20只股票(月度跟踪)" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/只看纳斯达克指数前20只股票(月度跟踪)/Nas_Mons.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="US_S_type" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="US_stocks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,27 +91,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/同花顺美股整理/US_S_type.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="onestock——ES500" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="US_stocks" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/个股_ES500套利模型" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/个股_ES500套利模型/onestock——ES500.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -275,6 +164,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Nas_Mons" />
         <item itemvalue="Python.US_S_type" />
         <item itemvalue="Python.us_stockFinanDT_sina" />
         <item itemvalue="Python.us_stock_code" />
@@ -300,108 +190,29 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="975000" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="718" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24925373" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32867134" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/all_data_spider.py" />
-    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_xueqiu.py" />
-    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_yahoo.py" />
-    <entry file="file://$PROJECT_DIR$/港股和美股链接.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="47" selection-start-line="16" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_yahoo_quarter.py" />
-    <entry file="file://$PROJECT_DIR$/../a50_onestock.py" />
-    <entry file="file://$PROJECT_DIR$/../oneStock_FTSE100.py" />
-    <entry file="file://$PROJECT_DIR$/../MHI_OneStock.py" />
-    <entry file="file://$PROJECT_DIR$/../J225_OneStock.py" />
-    <entry file="file://$PROJECT_DIR$/个股_ES500套利模型/onestock——ES500.py" />
-    <entry file="file://$PROJECT_DIR$/个股_ES500套利模型/美股股接口编写/USstock_backApi.py" />
-    <entry file="file://$PROJECT_DIR$/个股_ES500套利模型/美股股接口编写/templates/usstock_ajax.html" />
-    <entry file="file://$PROJECT_DIR$/个股_ES500套利模型/美股股接口编写/templates/usstock.html" />
-    <entry file="file://$PROJECT_DIR$/Search.sql" />
-    <entry file="file://$PROJECT_DIR$/个股_ES500套利模型/onestock_ES500.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="123" selection-start-line="123" selection-end-line="130" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/个股_ES500套利模型/美股接口编写/templates/usstock.html" />
-    <entry file="file://$PROJECT_DIR$/个股_ES500套利模型/美股接口编写/static/usstock.js" />
-    <entry file="file://$PROJECT_DIR$/个股_ES500套利模型/美股接口编写/templates/us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PYENV/lib/python3.6/site-packages/urllib3/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="158" selection-start-line="158" selection-end-line="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/us_stock_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="91" selection-start-line="91" selection-end-line="92" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_yahoo_year.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/us_stockFinanDT_sina.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/同花顺美股整理/US_S_type.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-          <folding>
-            <element signature="e#23#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state width="1343" height="162" key="GridCell.Tab.0.bottom" timestamp="1588089637351">
+      <screen x="0" y="0" width="1366" height="714" />
+    </state>
+    <state width="1343" height="162" key="GridCell.Tab.0.bottom/0.0.1366.714@0.0.1366.714" timestamp="1588089637351" />
+    <state width="1343" height="162" key="GridCell.Tab.0.center" timestamp="1588089637350">
+      <screen x="0" y="0" width="1366" height="714" />
+    </state>
+    <state width="1343" height="162" key="GridCell.Tab.0.center/0.0.1366.714@0.0.1366.714" timestamp="1588089637350" />
+    <state width="1343" height="162" key="GridCell.Tab.0.left" timestamp="1588089637350">
+      <screen x="0" y="0" width="1366" height="714" />
+    </state>
+    <state width="1343" height="162" key="GridCell.Tab.0.left/0.0.1366.714@0.0.1366.714" timestamp="1588089637350" />
+    <state width="1343" height="162" key="GridCell.Tab.0.right" timestamp="1588089637351">
+      <screen x="0" y="0" width="1366" height="714" />
+    </state>
+    <state width="1343" height="162" key="GridCell.Tab.0.right/0.0.1366.714@0.0.1366.714" timestamp="1588089637351" />
+    <state x="221" y="0" key="SettingsEditor" timestamp="1588081153014">
+      <screen x="0" y="0" width="1366" height="714" />
+    </state>
+    <state x="221" y="0" key="SettingsEditor/0.0.1366.714@0.0.1366.714" timestamp="1588081153014" />
   </component>
 </project>
