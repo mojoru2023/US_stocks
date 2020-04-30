@@ -72,12 +72,22 @@ def insertDB(content):
 if __name__ == '__main__':
 
 
-    for s_code in Python_sel_Mysql():
-        url_str = 'http://stockpage.10jqka.com.cn/'+str(s_code)+'/company/'
+    nasdap100 = 'AAPL,MSFT,AMZN,GOOG,GOOGL,FB,INTC,CMCSA,PEP,CSCO,ADBE,NVDA,NFLX,TSLA,COST,PYPL,AMGN,AVGO,TXN,CHTR,SBUX,QCOM,GILD,MDLZ,TMUS,FISV,BKNG,INTU,ADP,ISRG,VRTX,MU,CSX,BIIB,AMAT,AMD,ATVI,EXC,MAR,LRCX,WBA,ADI,ROST,ADSK,REGN,ILMN,CTSH,XEL,JD,MNST,MELI,NXPI,BIDU,KHC,SIRI,PAYX,EA,LULU,EBAY,CTAS,WDAY,ORLY,VRSK,WLTW,CSGP,PCAR,KLAC,SPLK,NTES,MCHP,VRSN,ANSS,IDXX,CERN,ALXN,ASML,SNPS,FAST,DLTR,CPRT,XLNX,CDNS,ALGN,SGEN,WDC,UAL,SWKS,CDW,CHKP,ULTA,INCY,TCOM,BMRN,EXPE,MXIM,CTXS,TTWO,FOXA,AAL,NTAP,FOX,LBTYK,LBTYA'
+    # f_nasdap100 = [x for x in nasdap100 if x != ","]
+    f_nasdap100 = nasdap100.split(",")
+    options = webdriver.ChromeOptions()
+    options.add_argument("--no-sandbox")
+    driver = webdriver.Chrome("/usr/bin/chromedriver", chrome_options=options)
+
+
+    for url_code in f_nasdap100:
+
+
+        url_str = 'http://stockpage.10jqka.com.cn/'+str(url_code)+'/company/'
         bl =[]
         html = get_first_page(url_str)
         big_list = []
-        bl.append(s_code)
+        bl.append(url_code)
         selector = etree.HTML(html)
         name = selector.xpath('//*[@id="produce"]/div[2]/table/tbody/tr[1]/td[3]/text()')
         type = selector.xpath('//*[@id="produce"]/div[2]/table/tbody/tr[2]/td[2]/text()')

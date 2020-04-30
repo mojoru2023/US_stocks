@@ -48,30 +48,6 @@ def parse_stock_note(html):
 
 
 
-
-
-
-
-
-
-def Python_sel_Mysql():
-    # 使用cursor()方法获取操作游标
-    connection = pymysql.connect(host='127.0.0.1', port=3306, user='root', password='123456', db='us_stock',
-                                 charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
-    cur = connection.cursor()
-    #sql 语句
-    for i in range(3569,5967):
-        sql = 'select code from us_stock where id = %s ' % i
-        # #执行sql语句
-        cur.execute(sql)
-        # #获取所有记录列表
-        data = cur.fetchone()
-        num = data['code']
-        url = 'https://finance.yahoo.com/quote/' + str(num) + '/financials?p=' + str(num)
-        yield url
-
-
-
 def insertDB(content):
     connection = pymysql.connect(host='127.0.0.1', port=3306, user='root', password='123456', db='us_stock',
                                  charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
@@ -92,10 +68,17 @@ def insertDB(content):
 
 #
 if __name__ == '__main__':
-    for url_str in Python_sel_Mysql():
-        html = call_page(url_str)
+    nasdap100 = 'AAPL,MSFT,AMZN,GOOG,GOOGL,FB,INTC,CMCSA,PEP,CSCO,ADBE,NVDA,NFLX,TSLA,COST,PYPL,AMGN,AVGO,TXN,CHTR,SBUX,QCOM,GILD,MDLZ,TMUS,FISV,BKNG,INTU,ADP,ISRG,VRTX,MU,CSX,BIIB,AMAT,AMD,ATVI,EXC,MAR,LRCX,WBA,ADI,ROST,ADSK,REGN,ILMN,CTSH,XEL,JD,MNST,MELI,NXPI,BIDU,KHC,SIRI,PAYX,EA,LULU,EBAY,CTAS,WDAY,ORLY,VRSK,WLTW,CSGP,PCAR,KLAC,SPLK,NTES,MCHP,VRSN,ANSS,IDXX,CERN,ALXN,ASML,SNPS,FAST,DLTR,CPRT,XLNX,CDNS,ALGN,SGEN,WDC,UAL,SWKS,CDW,CHKP,ULTA,INCY,TCOM,BMRN,EXPE,MXIM,CTXS,TTWO,FOXA,AAL,NTAP,FOX,LBTYK,LBTYA'
+    # f_nasdap100 = [x for x in nasdap100 if x != ","]
+    f_nasdap100 = nasdap100.split(",")
+
+    for url_code in f_nasdap100:
+        url_f = 'https://finance.yahoo.com/quote/' + str(url_code) + '/financials?p=' + str(url_code)
+
+        html = call_page(url_f)
         content = parse_stock_note(html)
-        insertDB(content)
+        print(content)
+        # insertDB(content)
         print(datetime.datetime.now())
 
 

@@ -56,14 +56,15 @@ def remove_block(items):
 
 
 def insertDB(content):
-    connection = pymysql.connect(host='127.0.0.1', port=3306, user='root', password='123456', db='SP500_Nas100',
+    connection = pymysql.connect(host='127.0.0.1', port=3306, user='root', password='123456', db='NasMons',
                                  charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
 
     cursor = connection.cursor()
     try:
         nasdap100 = 'AAPL,MSFT,AMZN,GOOG,GOOGL,FB,INTC,CMCSA,PEP,CSCO,ADBE,NVDA,NFLX,TSLA,COST,PYPL,AMGN,AVGO,TXN,CHTR,SBUX,QCOM,GILD,MDLZ,TMUS,FISV,BKNG,INTU,ADP,ISRG,VRTX,MU,CSX,BIIB,AMAT,AMD,ATVI,EXC,MAR,LRCX,WBA,ADI,ROST,ADSK,REGN,ILMN,CTSH,XEL,JD,MNST,MELI,NXPI,BIDU,KHC,SIRI,PAYX,EA,LULU,EBAY,CTAS,WDAY,ORLY,VRSK,WLTW,CSGP,PCAR,KLAC,SPLK,NTES,MCHP,VRSN,ANSS,IDXX,CERN,ALXN,ASML,SNPS,FAST,DLTR,CPRT,XLNX,CDNS,ALGN,SGEN,WDC,UAL,SWKS,CDW,CHKP,ULTA,INCY,TCOM,BMRN,EXPE,MXIM,CTXS,TTWO,FOXA,AAL,NTAP,FOX,LBTYK,LBTYA'
+
         f_103 = "%s," *103
-        cursor.executemany('insert into nasdap100_s ({0}) values ({1})'.format(nasdap100,f_103[:-1]), content)
+        cursor.executemany('insert into nas_Mons ({0}) values ({1})'.format(nasdap100,f_103[:-1]), content)
         connection.commit()
         connection.commit()
         connection.close()
@@ -82,7 +83,7 @@ if __name__ == '__main__':
 
 
 
-#create table nasdap100_s(id int not null primary key auto_increment,AAPL  float,MSFT  float,AMZN  float,GOOG  float,GOOGL  float,FB  float,INTC  float,CMCSA  float,PEP  float,CSCO  float,ADBE  float,NVDA  float,NFLX  float,TSLA  float,COST  float,PYPL  float,AMGN  float,AVGO  float,TXN  float,CHTR  float,SBUX  float,QCOM  float,GILD  float,MDLZ  float,TMUS  float,FISV  float,BKNG  float,INTU  float,ADP  float,ISRG  float,VRTX  float,MU  float,CSX  float,BIIB  float,AMAT  float,AMD  float,ATVI  float,EXC  float,MAR  float,LRCX  float,WBA  float,ADI  float,ROST  float,ADSK  float,REGN  float,ILMN  float,CTSH  float,XEL  float,JD  float,MNST  float,MELI  float,NXPI  float,BIDU  float,KHC  float,SIRI  float,PAYX  float,EA  float,LULU  float,EBAY  float,CTAS  float,WDAY  float,ORLY  float,VRSK  float,WLTW  float,CSGP  float,PCAR  float,KLAC  float,SPLK  float,NTES  float,MCHP  float,VRSN  float,ANSS  float,IDXX  float,CERN  float,ALXN  float,ASML  float,SNPS  float,FAST  float,DLTR  float,CPRT  float,XLNX  float,CDNS  float,ALGN  float,SGEN  float,WDC  float,UAL  float,SWKS  float,CDW  float,CHKP  float,ULTA  float,INCY  float,TCOM  float,BMRN  float,EXPE  float,MXIM  float,CTXS  float,TTWO  float,FOXA  float,AAL  float,NTAP  float,FOX  float,LBTYK  float,LBTYA  float) engine=InnoDB  charset=utf8;
+# create table nas_Mons(id int not null primary key auto_increment,AAPL  float,MSFT  float,AMZN  float,GOOG  float,GOOGL  float,FB  float,INTC  float,CMCSA  float,PEP  float,CSCO  float,ADBE  float,NVDA  float,NFLX  float,TSLA  float,COST  float,PYPL  float,AMGN  float,AVGO  float,TXN  float,CHTR  float,SBUX  float,QCOM  float,GILD  float,MDLZ  float,TMUS  float,FISV  float,BKNG  float,INTU  float,ADP  float,ISRG  float,VRTX  float,MU  float,CSX  float,BIIB  float,AMAT  float,AMD  float,ATVI  float,EXC  float,MAR  float,LRCX  float,WBA  float,ADI  float,ROST  float,ADSK  float,REGN  float,ILMN  float,CTSH  float,XEL  float,JD  float,MNST  float,MELI  float,NXPI  float,BIDU  float,KHC  float,SIRI  float,PAYX  float,EA  float,LULU  float,EBAY  float,CTAS  float,WDAY  float,ORLY  float,VRSK  float,WLTW  float,CSGP  float,PCAR  float,KLAC  float,SPLK  float,NTES  float,MCHP  float,VRSN  float,ANSS  float,IDXX  float,CERN  float,ALXN  float,ASML  float,SNPS  float,FAST  float,DLTR  float,CPRT  float,XLNX  float,CDNS  float,ALGN  float,SGEN  float,WDC  float,UAL  float,SWKS  float,CDW  float,CHKP  float,ULTA  float,INCY  float,TCOM  float,BMRN  float,EXPE  float,MXIM  float,CTXS  float,TTWO  float,FOXA  float,AAL  float,NTAP  float,FOX  float,LBTYK  float,LBTYA  float ,LastTime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP) engine=InnoDB  charset=utf8;
 
 
 # drop table nasdap100_s;

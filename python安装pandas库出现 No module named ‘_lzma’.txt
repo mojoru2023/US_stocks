@@ -1,0 +1,21 @@
+python安装pandas库出现 No module named ‘_lzma’
+
+
+在利用pip按照以下步骤安装pandas时会报No module named ‘_lzma’ 的错误
+
+sudo pip3 install pytz
+sudo pip3 install python-dateutil
+sudo pip3 install pandas
+解决方法
+
+yum install xz-devel
+yum install python-backports-lzma
+pip install backports.lzma
+在文件 /usr/local/lib/python3.6/lzma.py line 27行 修改如下
+
+try:
+    from _lzma import *
+    from _lzma import _encode_filter_properties, _decode_filter_properties
+except ImportError:
+    from backports.lzma import *
+    from backports.lzma import _encode_filter_properties, _decode_filter_properties

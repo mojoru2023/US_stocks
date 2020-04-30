@@ -11,7 +11,6 @@ from requests.exceptions import ConnectionError
 from selenium import webdriver
 from lxml import etree
 import datetime
-driver = webdriver.Chrome()
 
 
 #请求
@@ -76,14 +75,17 @@ def insertDB(content):
         pass
 
 if __name__ == '__main__':
-        html = get_first_page()
+    options = webdriver.ChromeOptions()
+    options.add_argument("--no-sandbox")
+    driver = webdriver.Chrome("/usr/bin/chromedriver", chrome_options=options)
+    html = get_first_page()
+    content = parse_html(html)
+    insertDB(content)
+    while True:
+        html = next_page()
         content = parse_html(html)
         insertDB(content)
-        while True:
-            html = next_page()
-            content = parse_html(html)
-            insertDB(content)
-            print(datetime.datetime.now())
+        print(datetime.datetime.now())
 
 # #
 # create table us_stock(
