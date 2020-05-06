@@ -21,13 +21,12 @@ def call_page(url):
 
 # 正则和lxml混用
 def parse_html(html):  # 正则专门有反爬虫的布局设置，不适合爬取表格化数据！
-    big_list = []
+
     selector = etree.HTML(html)
-    Price = selector.xpath('/html/body/div[1]/div[2]/div[1]/div/div/table/tbody/tr/td[5]/text()')
-    f_price = RemoveDot(remove_block(Price))
-    f_tup = tuple(f_price)
-    big_list.append((f_tup))
-    return big_list
+    Price = selector.xpath('//*[@id="spFP"]/div[1]/span[1]/text()')
+    for item in Price:
+        big_list.append(item)
+
 
 
 
@@ -61,7 +60,6 @@ def insertDB(content):
 
     cursor = connection.cursor()
     try:
-        nasdap100 = 'AAPL,MSFT,AMZN,GOOG,GOOGL,FB,INTC,CMCSA,PEP,CSCO,ADBE,NVDA,NFLX,TSLA,COST,PYPL,AMGN,AVGO,TXN,CHTR,SBUX,QCOM,GILD,MDLZ,TMUS,FISV,BKNG,INTU,ADP,ISRG,VRTX,MU,CSX,BIIB,AMAT,AMD,ATVI,EXC,MAR,LRCX,WBA,ADI,ROST,ADSK,REGN,ILMN,CTSH,XEL,JD,MNST,MELI,NXPI,BIDU,KHC,SIRI,PAYX,EA,LULU,EBAY,CTAS,WDAY,ORLY,VRSK,WLTW,CSGP,PCAR,KLAC,SPLK,NTES,MCHP,VRSN,ANSS,IDXX,CERN,ALXN,ASML,SNPS,FAST,DLTR,CPRT,XLNX,CDNS,ALGN,SGEN,WDC,UAL,SWKS,CDW,CHKP,ULTA,INCY,TCOM,BMRN,EXPE,MXIM,CTXS,TTWO,FOXA,AAL,NTAP,FOX,LBTYK,LBTYA'
 
         f_103 = "%s," *103
         cursor.executemany('insert into nas_Mons ({0}) values ({1})'.format(nasdap100,f_103[:-1]), content)
@@ -75,10 +73,23 @@ def insertDB(content):
 
 
 if __name__ == '__main__':
-    url = 'https://www.slickcharts.com/nasdaq100'
-    html = call_page(url)
-    content = parse_html(html)
-    insertDB(content)
+    big_list = []
+    nasdap100 = 'AAPL,MSFT,AMZN,GOOG,GOOGL,FB,INTC,CMCSA,PEP,CSCO,ADBE,NVDA,NFLX,TSLA,COST,PYPL,AMGN,AVGO,TXN,CHTR,SBUX,QCOM,GILD,MDLZ,TMUS,FISV,BKNG,INTU,ADP,ISRG,VRTX,MU,CSX,BIIB,AMAT,AMD,ATVI,EXC,MAR,LRCX,WBA,ADI,ROST,ADSK,REGN,ILMN,CTSH,XEL,JD,MNST,MELI,NXPI,BIDU,KHC,SIRI,PAYX,EA,LULU,EBAY,CTAS,WDAY,ORLY,VRSK,WLTW,CSGP,PCAR,KLAC,SPLK,NTES,MCHP,VRSN,ANSS,IDXX,CERN,ALXN,ASML,SNPS,FAST,DLTR,CPRT,XLNX,CDNS,ALGN,SGEN,WDC,UAL,SWKS,CDW,CHKP,ULTA,INCY,TCOM,BMRN,EXPE,MXIM,CTXS,TTWO,FOXA,AAL,NTAP,FOX,LBTYK,LBTYA'
+    f_nas100 =nasdap100.split(",")
+    for code in f_nas100:
+
+        url = "http://gu.qq.com/us{0}.OQ/gg".format(code)
+        html = call_page(url)
+        parse_html(html)
+        print(big_list)
+        print(url)
+    ff_l = []
+    f_tup = tuple(big_list)
+    ff_l.append((f_tup))
+    print(ff_l)
+    insertDB(ff_l)
+
+
 
 
 
