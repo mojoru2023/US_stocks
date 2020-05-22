@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c84c4138-2c8c-45e6-86ce-7c1498f36fde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/跟踪纳斯达克成分股(月度跟踪)/Nas_Mons.py" beforeDir="false" afterPath="$PROJECT_DIR$/跟踪纳斯达克成分股(月度跟踪)/Nas_Mons.py" afterDir="false" />
-    </list>
+    <list default="true" id="c84c4138-2c8c-45e6-86ce-7c1498f36fde" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +40,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Yahoo_JAPAN_spiders/Jobs" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -187,10 +184,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="470" y="109" width="426" height="496" key="FileChooserDialogImpl" timestamp="1588250458281">
+    <state x="470" y="109" width="426" height="496" key="FileChooserDialogImpl" timestamp="1589886279533">
       <screen x="0" y="0" width="1366" height="714" />
     </state>
-    <state x="470" y="109" width="426" height="496" key="FileChooserDialogImpl/0.0.1366.714@0.0.1366.714" timestamp="1588250458281" />
+    <state x="470" y="109" width="426" height="496" key="FileChooserDialogImpl/0.0.1366.714@0.0.1366.714" timestamp="1589886279533" />
     <state width="1343" height="226" key="GridCell.Tab.0.bottom" timestamp="1588750003807">
       <screen x="0" y="0" width="1366" height="714" />
     </state>
