@@ -1,0 +1,16 @@
+crontab -e
+
+
+每3分钟执行一次
+
+
+
+
+
+2. sudo service cron start
+
+0,38  14-21 * * 1-5   /usr/local/bin/python3.6 /root/SP_Mons.py
+
+
+
+0 19 1,15 * *  /usr/local/bin/python3.6 /root/cron_sp_Mons.py
