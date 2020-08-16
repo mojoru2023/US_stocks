@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c84c4138-2c8c-45e6-86ce-7c1498f36fde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/US_stocks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/US_stocks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/us_stockFinanDT_sina.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/us_stockFinanDT_yahoo_year.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/us_stock_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/从数据库导出数据/outfile_csv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/只整理纳斯达克成分股的财务状况/Das_FinanDT_sina.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/只整理纳斯达克成分股的财务状况/Nas_FinanDT_yahoo_year.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/美股并表查询SQL语句/新建文本.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/跟踪纳斯达克成分股(月度跟踪)/计划任务.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +34,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -47,7 +43,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.cron_sp_Mons">
+  <component name="RunManager" selected="Python.SP_Mons">
     <configuration name="Nas_Mons" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="US_stocks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cron_sp_Mons" />
         <item itemvalue="Python.SP_Mons" />
+        <item itemvalue="Python.cron_sp_Mons" />
         <item itemvalue="Python.SP_FinanDT_sina" />
         <item itemvalue="Python.sp_outfile_csv" />
         <item itemvalue="Python.Nas_Mons" />
@@ -206,9 +202,9 @@
       <screen x="0" y="0" width="1366" height="714" />
     </state>
     <state width="1343" height="226" key="GridCell.Tab.0.right/0.0.1366.714@0.0.1366.714" timestamp="1592398412125" />
-    <state x="221" y="0" key="SettingsEditor" timestamp="1588169374246">
-      <screen x="0" y="0" width="1366" height="714" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1597542411567">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="221" y="0" key="SettingsEditor/0.0.1366.714@0.0.1366.714" timestamp="1588169374246" />
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597542411567" />
   </component>
 </project>

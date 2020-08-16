@@ -1,0 +1,86 @@
+情境描述
+要处理一个目录下所有的的日志文件 xxx.log（每个文件大概13G），过程是这样的：检索每行中是否包含 'xx-Obsever' 和 '大主宰' 这两个词，如果包含，则看这一行是否有'xx-Observer,[(.*)],recv',正则里小括号中的内容是我想要的 id，如果匹配到，则取出id，然后利用这个id去检索 xxx.log 文件中所有含有 [id] 的日志并输出到 xxx.log.result 文件
+
+我的代码
+#!/usr/bin/env python
+#coding=utf-8
+
+import sys
+import os
+import re
+import threading
+import Queue
+
+reload(sys)
+sys.setdefaultencoding("gbk")
+
+print 'start run'
+
+queue = Queue.Queue(maxsize=0)
+file_list = os.listdir('.')
+for f in file_list:
+    if f.find('vropenhb') == -1:
+        continue
+    queue.put(f)
+
+def handle_file():
+    while not queue.empty():
+        f = queue.get()
+        #file_dict = {'filename':f}
+        f1 = open(f,'r')
+        ids = set()
+        #for line in f1.readlines():
+        #    if line.find('xx-Ob') != -1 and line.find(u'word=大主宰') != -1:
+        #        print 'find one'
+        #        res = re.search('xx-Observer,\[(.*)\],recv', line)
+        #        if res != None:
+        #            ids.add(res.group(1))
+        cmd_grep_ob = "grep xx-Ob " + f  + " > ./search/" + f  + ".search"
+        print cmd_grep_ob
+        os.system(cmd_grep_ob)
+        f1.close()
+        filename_search = './search/' + f + '.search'
+        f_search = open(filename_search,'r')
+        for line in f_search:
+            if line.find(u'大主宰') != -1:
+                res = re.search('xx-Observer,\[(.*)\],recv', line)
+                if res != None:
+                    print 'find one'
+                    ids.add(res.group(1))
+        f_search.close()
+        
+        
+        f_r = open(f, 'r')
+        output_filename = './result/' + f + '.result'
+        f_w = open(output_filename, 'w+')
+        for line in f_r.readlines():
+            res = re.search('xx-Observer,\[(.*)\],recv',line)
+            if res != None:
+                if res.group(1) in ids:
+                    print 'write one'
+                    f_w.write(line)
+        f_w.close()        
+        f_r.close()
+        #for i in ids:
+        #    file_dict['id'] = i
+        #    cmd_grep_id = "grep %(id)s %(filename)s >> ./result/%(filename)s.result"
+        #    cmd_grep_id = cmd_grep_id % file_dict
+        #    os.system(cmd_grep_id)
+mythread = []
+
+for i in range(8):
+    t = threading.Thread(target=handle_file)
+    t.start()
+    mythread.append(t)
+for t in mythread:
+    t.join()
+问题描述：
+最开始我是在 Python 中调用 grep 来完成整个过程的，但是发现很慢，但是没有遇到 被 killed 的情况，所以我换成了文件处理，通过 find 以及 正则 等方式来逐行处理，结果运行的时候发现，程序会经常卡住（刚开始跑就会卡住），过一会会继续运行，然后过了一段时间 就被 killed 了，请问大家这是什么原因，是不是我写的多线程有问题，思路不对还是什么原因，谢谢~
+
+ps: 如果觉得情境和问题描述的不清晰，欢迎留言
+
+解决方案
+我觉得问题应该是使用了 file.readlines() 这个方法的问题，这样会将文件的所有内容一次性读进内存，而且文件会很大，所以占用了太多的内存，为了保证系统正常运行，系统就把该进程 kill 掉了，所以可以改用
+
+for line in open('xxxx.log','r')
+方式逐行读取文件内容而不是一次性读进内存。

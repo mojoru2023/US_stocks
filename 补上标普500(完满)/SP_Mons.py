@@ -84,8 +84,8 @@ if __name__ == '__main__':
         url = "http://gu.qq.com/us{0}.OQ/gg".format(code)
         html = call_page(url)
         parse_html(html)
-        print(big_list)
         print(url)
+        time.sleep(0.1)
     ff_l = []
     f_tup = tuple(big_list)
     ff_l.append((f_tup))
