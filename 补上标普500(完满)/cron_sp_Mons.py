@@ -5,6 +5,8 @@ import os
 import datetime
 import pymysql
 import pandas as pd
+from retrying import retry
+
 
 from sqlalchemy import create_engine
 import pymysql
@@ -33,7 +35,11 @@ def savedt():
     df_js225.to_excel(excelFile3)
 
 
+def retry_if_io_error(exception):
+    """Return True if we should retry (in this case when it's an OSError), False otherwise"""
+    return isinstance(exception, OSError)
 
+@retry(stop_max_attempt_number=6,wait_fixed=2000,retry_on_exception=retry_if_io_error)
 def sendmail():
     # 发送邮件参数设置
     sender = '291109028@qq.com'  # 发送者邮箱
