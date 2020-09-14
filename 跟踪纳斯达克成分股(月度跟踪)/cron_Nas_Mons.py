@@ -21,7 +21,7 @@ engine_Nas_Mons = create_engine('mysql+pymysql://root:123456@localhost:3306/NasM
 
 
 
-sql_Nas_Mons = 'select LastTime,asml,chtr,aapl,amat,swks,fb,regn,ntap,wba,adp,csgp,lrcx,klac,exc,nvda from nas_Mons  ; '
+sql_Nas_Mons = 'select LastTime,asml,chtr,aapl,amat,swks,fb,regn,ntap,wba,adp,csgp,lrcx,klac,exc,nvda,IXIC from nas_Mons  ; '
 
 ln = os.getcwd()
 

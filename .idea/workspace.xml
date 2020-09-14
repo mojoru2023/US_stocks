@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c84c4138-2c8c-45e6-86ce-7c1498f36fde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/US_stocks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/US_stocks.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/跟踪纳斯达克成分股(月度跟踪)/Nas_Mons.py" beforeDir="false" afterPath="$PROJECT_DIR$/跟踪纳斯达克成分股(月度跟踪)/Nas_Mons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/跟踪纳斯达克成分股(月度跟踪)/cron_Nas_Mons.py" beforeDir="false" afterPath="$PROJECT_DIR$/跟踪纳斯达克成分股(月度跟踪)/cron_Nas_Mons.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
