@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c84c4138-2c8c-45e6-86ce-7c1498f36fde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/补上标普500(完满)/标普一分为二/SP_Mons1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/补上标普500(完满)/标普一分为二/SP_Mons2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/补上标普500(完满)/标普一分为二/cron_sp_Mons1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/补上标普500(完满)/标普一分为二/cron_sp_Mons2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,13 +36,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../VBA_CS" />
+    <property name="last_opened_file_path" value="C:/Documents and Settings" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.SP_Mons1">
-    <configuration name="SP_Mons" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.SP_Nas_ZZG (1)">
+    <configuration name="ONE_JS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="US_stocks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -54,11 +50,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/补上标普500(完满)" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="D:/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/补上标普500(完满)/SP_Mons.py" />
+      <option name="SCRIPT_NAME" value="D:/Downloads/ONE_JS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -67,7 +63,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SP_Mons1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SP_Nas_ZZG (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="US_stocks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,11 +71,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/补上标普500(完满)/标普一分为二" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="D:/Downloads" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/补上标普500(完满)/标普一分为二/SP_Mons1.py" />
+      <option name="SCRIPT_NAME" value="D:/Downloads/SP_Nas_ZZG.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -88,7 +84,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ZGG_" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SP_Nas_ZZG" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="US_stocks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -96,11 +92,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/中概股跟踪2020.11.18" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/标普+纳指板块成分股分类+中概股加入" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/中概股跟踪2020.11.18/ZGG_.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/标普+纳指板块成分股分类+中概股加入/SP_Nas_ZZG.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,7 +105,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cron_ZGG_" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SP_Nas_ZZG_4C" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="US_stocks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -117,11 +113,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/中概股跟踪2020.11.18" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../VBA_CS/python_vba/自动识别列数的脚本" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/中概股跟踪2020.11.18/cron_ZGG_.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../VBA_CS/python_vba/自动识别列数的脚本/SP_Nas_ZZG_4C.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cron_sp_Mons" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="TEXT_S" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="US_stocks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,11 +134,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/补上标普500(完满)" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../VBA_CS" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/补上标普500(完满)/cron_sp_Mons.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../VBA_CS/TEXT_S.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SP_Mons1" />
-        <item itemvalue="Python.cron_ZGG_" />
-        <item itemvalue="Python.ZGG_" />
-        <item itemvalue="Python.SP_Mons" />
-        <item itemvalue="Python.cron_sp_Mons" />
+        <item itemvalue="Python.SP_Nas_ZZG (1)" />
+        <item itemvalue="Python.ONE_JS" />
+        <item itemvalue="Python.TEXT_S" />
+        <item itemvalue="Python.SP_Nas_ZZG" />
+        <item itemvalue="Python.SP_Nas_ZZG_4C" />
       </list>
     </recent_temporary>
   </component>
@@ -184,25 +180,45 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1611660167309">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1618403947532">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611660167309" />
-    <state width="1345" height="210" key="GridCell.Tab.0.bottom" timestamp="1611660168372">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1618403947532" />
+    <state width="1345" height="259" key="GridCell.Tab.0.bottom" timestamp="1618405203178">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="210" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611660168372" />
-    <state width="1345" height="210" key="GridCell.Tab.0.center" timestamp="1611660168372">
+    <state width="1345" height="259" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618405203178" />
+    <state width="1345" height="259" key="GridCell.Tab.0.center" timestamp="1618405203178">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="210" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611660168372" />
-    <state width="1345" height="210" key="GridCell.Tab.0.left" timestamp="1611660168372">
+    <state width="1345" height="259" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1618405203178" />
+    <state width="1345" height="259" key="GridCell.Tab.0.left" timestamp="1618405203177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="210" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611660168372" />
-    <state width="1345" height="210" key="GridCell.Tab.0.right" timestamp="1611660168372">
+    <state width="1345" height="259" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1618405203177" />
+    <state width="1345" height="259" key="GridCell.Tab.0.right" timestamp="1618405203178">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="210" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611660168372" />
+    <state width="1345" height="259" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1618405203178" />
+    <state width="664" height="220" key="GridCell.Tab.1.bottom" timestamp="1618401881521">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="664" height="220" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618401881521" />
+    <state width="664" height="220" key="GridCell.Tab.1.center" timestamp="1618401881521">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="664" height="220" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1618401881521" />
+    <state width="664" height="220" key="GridCell.Tab.1.left" timestamp="1618401881521">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="664" height="220" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1618401881521" />
+    <state width="664" height="220" key="GridCell.Tab.1.right" timestamp="1618401881521">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="664" height="220" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1618401881521" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1618060228058">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1618060228058" />
   </component>
 </project>
