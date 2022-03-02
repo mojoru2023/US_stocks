@@ -1,0 +1,32 @@
+
+
+只看科技板块就不需要关注美国经济和宏观经济
+宏观只作为参考，不专门针对宏观押注！
+
+
+计划任务
+
+1. 把美股的月度监控放在阿里云上
+2. 统计数据是全覆盖，但是结合财务数据，只发送部分有价值的个股到邮件！
+
+3. 不断研发对于市场有效的策略才是我的优势！所以美股要继续！
+
+
+crontab -e
+
+
+每3分钟执行一次
+
+*/3 * * * * /home/w/pyenv/bin/python /home/w/SP500_Nasdap100/SP500.py
+
+
+
+2. sudo service cron start
+
+0,30  14-21 * * 1-5   /usr/local/bin/python3.6 /root/Nas_Mons.py
+
+0,10  14-21 * * 1-5   /usr/local/bin/python3.6 /root/SP500_Nasdap100/Nasdap100.py
+
+
+
+0 19 1,15 * *  /usr/local/bin/python3.6 /root/cron_Nas_Mons.py

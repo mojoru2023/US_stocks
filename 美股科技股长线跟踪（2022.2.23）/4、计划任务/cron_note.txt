@@ -1,0 +1,10 @@
+
+
+0,10,20,30,40,50  21-23  * * 1-5 /usr/bin/python3 /root/follow_Nas100_2022_02_23.py
+
+0,10,20,30,40,50  0-4  * * 2-6 /usr/bin/python3 /root/follow_Nas100_2022_02_23.py
+
+
+
+
+

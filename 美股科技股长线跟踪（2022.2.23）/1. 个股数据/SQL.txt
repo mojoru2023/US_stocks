@@ -1,0 +1,21 @@
+
+,,,,,,,,,,,,,,
+
+
+SELECT * FROM us_stock.us_stock where
+code="asml"
+or code= "chtr"
+or code= "aapl"
+or code= "amat"
+or code= "swks"
+or code= "fb"
+or code= "regn"
+or code= "ntap"
+or code= "wba"
+or code= "adp"
+or code= "csgp"
+or code= "lrcx"
+or code= "klac"
+or code= "exc"
+or code= "nvda"
+order by  market_value asc ;
