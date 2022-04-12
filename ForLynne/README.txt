@@ -8,6 +8,3 @@
 一个3个导出结果确认
 6. 写一个bash
 
-Min2020@##
-
-/etc/yum.repos.d/google-chrome.repo
