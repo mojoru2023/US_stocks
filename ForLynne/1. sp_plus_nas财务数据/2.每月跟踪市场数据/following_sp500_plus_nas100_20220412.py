@@ -148,7 +148,6 @@ if __name__ == "__main__":
     insertDB(ff_l)
     e = datetime.datetime.now()
     print(e-s)
-    insertDB(b)
 
 
 
