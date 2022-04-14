@@ -6,7 +6,7 @@ import time
 
 import pandas as pd
 import pymysql
-from data_config import *
+
 import operator
 
 
