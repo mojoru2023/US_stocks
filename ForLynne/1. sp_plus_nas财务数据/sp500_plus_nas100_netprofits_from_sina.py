@@ -34,7 +34,7 @@ def insertDB(content):
                                  charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
     cursor = connection.cursor()
     try:
-        cursor.executemany('insert into sp_nas_netprofits_fromsina (code,name,current_dt,current_dt_minus1,current_dt_minus2,current_dt_minus3,current_dt_minus4) values (%s,%s,%s,%s,%s,%s,%s)', content)
+        cursor.executemany('insert into sp_nas_netprofits_fromsina (code,name,current_dt,current_dt_minus1,current_dt_minus2,current_dt_minus3,current_dt_minus4,sina_stock_url) values (%s,%s,%s,%s,%s,%s,%s,%s))', content)
         connection.commit()
         connection.close()
         print('向MySQL中添加数据成功！')
@@ -54,7 +54,8 @@ if __name__ == '__main__':
         selector = etree.HTML(html)
         name = selector.xpath('/html/body/div[2]/div[5]/h3/text()')
         profits = selector.xpath('/html/body/div[2]/div[7]/div[2]/table[2]/tbody/tr[15]/td/text()')
-        contents = name + profits
+        sina_stock_url = "https://stock.finance.sina.com.cn/usstock/quotes/{0}.html".format(url_code)
+        contents = name + profits + [sina_stock_url]
         big_tuple_list = list(contents)
         for i in big_tuple_list:
             b = "".join(re.split(r'亿|万|\s', i))  # 同时去除了空格，亿，万３个标签
@@ -78,7 +79,8 @@ if __name__ == '__main__':
 # current_dt_minus1 varchar(10),
 # current_dt_minus2 varchar(10),
 # current_dt_minus3 varchar(10),
-# current_dt_minus4 varchar(10)
+# current_dt_minus4 varchar(10),
+# sina_stock_url text
 #  ) engine=InnoDB default charset=utf8;
 
 #
