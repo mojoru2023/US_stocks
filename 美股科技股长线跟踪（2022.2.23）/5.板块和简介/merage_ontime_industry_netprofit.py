@@ -45,6 +45,18 @@ def merge_3table(tablename):
         new_dict = {"code":one_stock,"value":value_4}
         data_list.append(new_dict)
     sort_data = sorted(data_list,key=operator.itemgetter('value'), reverse=True)
+    list_top30_dt = sort_data[:30]
+
+    # outout top30
+    top30_code = ",".join(list_top30_dt)
+    sql_Mons_top30 = 'select {1} from {0}  ; '.format(top30_code,tablename)
+    df_top30 = pd.read_sql_query(sql_Mons_top30, engine_Lynne_Mons)
+    excelFile = 'ontime-{0}.xlsx'.format(tablename)  # 处理了文件属于当前目录下！
+    df_top30.to_excel(excelFile)
+
+
+
+
     for item in sort_data[:30]:
         print(item["code"],item["value"])
     # get netprofits
@@ -132,6 +144,4 @@ if __name__== "__main__":
     merge_3table("following_sp500_plus_nas100_20220412")
 
 
-
-
-
+# select INX,IXIC from following_sp500_plus_nas100_20220412;
