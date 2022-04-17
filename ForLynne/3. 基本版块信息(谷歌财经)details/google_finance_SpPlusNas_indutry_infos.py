@@ -66,7 +66,7 @@ def insertDB(content):
 
     cursor = connection.cursor()
     try:
-        cursor.executemany('insert into SpPlusNas_industry_infos (code,title_zh_cn,industry_infos,sector_infos,infos_zh_cn) values (%s,%s,%s,%s,%s)', content)
+        cursor.executemany('insert into spplusnas_industry_infos (code,title_zh_cn,industry_infos,sector_infos,infos_zh_cn) values (%s,%s,%s,%s,%s)', content)
         connection.commit()
         connection.commit()
         connection.close()
@@ -106,7 +106,7 @@ if __name__ == '__main__':
 #  Lynne@$$
 
 
-# create table SpPlusNas_industry_infos
+# create table spplusnas_industry_infos
 # (id int not null primary key auto_increment,
 # code  text,
 # title_zh_cn text,

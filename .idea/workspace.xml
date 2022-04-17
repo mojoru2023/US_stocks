@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c84c4138-2c8c-45e6-86ce-7c1498f36fde" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ForLynne/6. 计划任务每周五自动更新财务数据库/everySunday_reset_dt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ForLynne/ForLynne_uss_netprofits_dt.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/US_stocks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/US_stocks.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForLynne/1. sp_plus_nas财务数据/sp500_plus_nas100_netprofits_from_sina.py" beforeDir="false" afterPath="$PROJECT_DIR$/ForLynne/1. sp_plus_nas财务数据/sp500_plus_nas100_netprofits_from_sina.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForLynne/1. sp_plus_nas财务数据/t.py" beforeDir="false" afterPath="$PROJECT_DIR$/ForLynne/1. sp_plus_nas财务数据/t.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForLynne/2.每月跟踪市场数据/following_sp500_plus_nas100_20220412.py" beforeDir="false" afterPath="$PROJECT_DIR$/ForLynne/2.每月跟踪市场数据/following_sp500_plus_nas100_20220412.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForLynne/2.每月跟踪市场数据/get_base_dt.py" beforeDir="false" afterPath="$PROJECT_DIR$/ForLynne/2.每月跟踪市场数据/get_base_dt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForLynne/3. 基本版块信息(谷歌财经)details/google_finance_SpPlusNas_indutry_infos.py" beforeDir="false" afterPath="$PROJECT_DIR$/ForLynne/3. 基本版块信息(谷歌财经)details/google_finance_SpPlusNas_indutry_infos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForLynne/3. 基本版块信息(谷歌财经)details/spplusnas_industry_infos.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ForLynne/3. 基本版块信息(谷歌财经)details/spplusnas_industry_infos.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForLynne/5. 超越阿尔法3%的前30只股票计算/merage_ontime_industry_netprofit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForLynne/6. 直接导出带板块的结果和跟踪数据/merge_industry_netprofit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForLynne/6. 直接导出带板块的结果和跟踪数据/spplusnas_industry_infos.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForLynne/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ForLynne/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +50,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Documents and Settings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.SP_Nas_ZZG (1)">
-    <configuration name="ONE_JS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Shell Script.ForLynne_daily_dt.sh">
+    <configuration name="get_base_dt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="US_stocks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -50,53 +64,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:/Downloads" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:/Downloads/ONE_JS.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="SP_Nas_ZZG (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="US_stocks" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:/Downloads" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:/Downloads/SP_Nas_ZZG.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="SP_Nas_ZZG" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="US_stocks" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/标普+纳指板块成分股分类+中概股加入" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ForLynne/2.每月跟踪市场数据" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/标普+纳指板块成分股分类+中概股加入/SP_Nas_ZZG.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ForLynne/2.每月跟踪市场数据/get_base_dt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,7 +77,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SP_Nas_ZZG_4C" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="merge_industry_netprofit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="US_stocks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,11 +85,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../VBA_CS/python_vba/自动识别列数的脚本" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ForLynne/5. 直接导出带板块的结果和跟踪数据" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../VBA_CS/python_vba/自动识别列数的脚本/SP_Nas_ZZG_4C.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ForLynne/5. 直接导出带板块的结果和跟踪数据/merge_industry_netprofit.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +98,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TEXT_S" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sp500_plus_nas100_netprofits_from_sina" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="US_stocks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,29 +106,66 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../VBA_CS" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ForLynne/1. sp_plus_nas财务数据" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../VBA_CS/TEXT_S.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ForLynne/1. sp_plus_nas财务数据/sp500_plus_nas100_netprofits_from_sina.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="t" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="US_stocks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ForLynne/1. sp_plus_nas财务数据" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ForLynne/1. sp_plus_nas财务数据/t.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ForLynne_daily_dt.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/ForLynne/ForLynne_daily_dt.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/ForLynne" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SP_Nas_ZZG (1)" />
-        <item itemvalue="Python.ONE_JS" />
-        <item itemvalue="Python.TEXT_S" />
-        <item itemvalue="Python.SP_Nas_ZZG" />
-        <item itemvalue="Python.SP_Nas_ZZG_4C" />
+        <item itemvalue="Shell Script.ForLynne_daily_dt.sh" />
+        <item itemvalue="Python.get_base_dt" />
+        <item itemvalue="Python.t" />
+        <item itemvalue="Python.merge_industry_netprofit" />
+        <item itemvalue="Python.sp500_plus_nas100_netprofits_from_sina" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -179,46 +188,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1618403947532">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1618403947532" />
-    <state width="1345" height="259" key="GridCell.Tab.0.bottom" timestamp="1618405203178">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="259" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618405203178" />
-    <state width="1345" height="259" key="GridCell.Tab.0.center" timestamp="1618405203178">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="259" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1618405203178" />
-    <state width="1345" height="259" key="GridCell.Tab.0.left" timestamp="1618405203177">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="259" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1618405203177" />
-    <state width="1345" height="259" key="GridCell.Tab.0.right" timestamp="1618405203178">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="259" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1618405203178" />
-    <state width="664" height="220" key="GridCell.Tab.1.bottom" timestamp="1618401881521">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="664" height="220" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618401881521" />
-    <state width="664" height="220" key="GridCell.Tab.1.center" timestamp="1618401881521">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="664" height="220" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1618401881521" />
-    <state width="664" height="220" key="GridCell.Tab.1.left" timestamp="1618401881521">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="664" height="220" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1618401881521" />
-    <state width="664" height="220" key="GridCell.Tab.1.right" timestamp="1618401881521">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="664" height="220" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1618401881521" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1618060228058">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1618060228058" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

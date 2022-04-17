@@ -26,8 +26,6 @@ def parse_html(html):  # 正则专门有反爬虫的布局设置，不适合爬�
     for item in Price:
         big_list.append(item)
 
-
-
 _base_dt_2022_0412 = ""
 
 if __name__ == '__main__':
@@ -43,3 +41,6 @@ if __name__ == '__main__':
     f_tup = tuple(big_list)
     ff_l.append((f_tup))
     print(ff_l)
+
+
+
