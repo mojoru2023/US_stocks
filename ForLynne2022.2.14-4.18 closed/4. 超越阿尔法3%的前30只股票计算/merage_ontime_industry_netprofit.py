@@ -20,6 +20,13 @@ def remove_list(item):
     return result
 
 
+def get_notnull_fromlist(list_content):
+    result_list = []
+    for item in list_content:
+        if len(item) !=0:
+            result_list.append(item)
+    return result_list
+
 def top2index_top30_and_last30_stock(db_tablename,dbname):
     # 1 首先前2位是股指,后面都是个股(计算好的超越贝塔的收益率数据)
 # 2 先保证最近的50个个股不为空的数量大于三分之一
@@ -117,20 +124,23 @@ def merge_industryPlusNetProfits_ontime(select_list):
             print(e)
 
     # get industry data
-        sql_industry_info = "select title_zh_cn,industry_infos,sector_infos,infos_zh_cn from spplusnas_industry_infos where code = '{0}'   ".format(one_stock)
-        cur.execute(sql_industry_info)
-        # #获取所有记录列表
-        sql_industry_info = cur.fetchone()
-        print(sql_industry_info)
-        title_zh_cn = sql_industry_info["title_zh_cn"]
-        industry_infos = sql_industry_info["industry_infos"]
-        sector_infos = sql_industry_info["sector_infos"]
-        infos_zh_cn = sql_industry_info["infos_zh_cn"]
-        three_table_info = [title_zh_cn,one_stock,top30_item_dict[one_stock][0],industry_infos,sector_infos,current_dt,current_dt_minus1,current_dt_minus2,current_dt_minus3,current_dt_minus4,sina_stock_url]
-        writeinto_detail(top30_csvname, three_table_info)
-        cur.close()
+        if one_stock not in ["IXIC","INX"]:
+
+            sql_industry_info = "select title_zh_cn,industry_infos,sector_infos from spplusnas_industry_infos where code = '{0}'   ".format(one_stock)
+            cur.execute(sql_industry_info)
+            # #获取所有记录列表
+            sql_industry_info = cur.fetchone()
+            print(sql_industry_info)
+            title_zh_cn = sql_industry_info["title_zh_cn"]
+            industry_infos = sql_industry_info["industry_infos"]
+            sector_infos = sql_industry_info["sector_infos"]
+            three_table_info = [title_zh_cn,one_stock,top30_item_dict[one_stock][0],industry_infos,sector_infos,current_dt,current_dt_minus1,current_dt_minus2,current_dt_minus3,current_dt_minus4,sina_stock_url]
+            writeinto_detail(top30_csvname, three_table_info)
+            cur.close()
 
 
+# ['FTI', 'PSX', 'SYF', 'CFG', 'IXIC', 'INX']
+# select industry_infos,sector_infos from spplusnas_industry_infos where code = 'INX'  ;
 
 
 def mkdir(path):
@@ -169,9 +179,9 @@ if __name__== "__main__":
     top30_code_list, last30_code_list, top30_item_dict, last30_item_dict = top2index_top30_and_last30_stock(db_tablename,dbname)
     # 1.得到top30 的板块数据，比单纯板块增加一个收益率 ok
     print(top30_code_list)
-    merge_industryPlusNetProfits_ontime(top30_code_list)
+    get_notnull_fromlist_top30_code = get_notnull_fromlist(top30_code_list)
+    merge_industryPlusNetProfits_ontime(get_notnull_fromlist_top30_code)
     # 2. top30 的实时数据导出 ，便于作图，去除0
-    output_dt_use_code(top30_code_list,"top30",dbname,db_tablename)
-
+    output_dt_use_code(get_notnull_fromlist_top30_code,"top30",dbname,db_tablename)
     csv2excel(top30_csvname, top30_excelname)
 
