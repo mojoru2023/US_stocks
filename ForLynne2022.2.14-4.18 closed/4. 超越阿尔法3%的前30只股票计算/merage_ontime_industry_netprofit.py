@@ -103,42 +103,46 @@ def merge_industryPlusNetProfits_ontime(select_list):
     writeinto_detail(top30_csvname, three_table_title)
 
     for one_stock in select_list:
-    # get netprofits
-        connection = pymysql.connect(host='127.0.0.1', port=3306, user='root', password='123456', db='ForLynne',
-                                     charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
-        cur = connection.cursor()
-        # sql 语句
-        sql_netprofits = "select name,current_dt,current_dt_minus1,current_dt_minus2,current_dt_minus3,current_dt_minus4,sina_stock_url from sp_nas_netprofits_fromsina  where code = '{0}'   ".format(one_stock)
-        cur.execute(sql_netprofits)
-        # #获取所有记录列表
 
-        data_sql_netprofits = cur.fetchone()
-        try:
-            current_dt = data_sql_netprofits["current_dt"]
-            current_dt_minus1 = data_sql_netprofits["current_dt_minus1"]
-            current_dt_minus2 = data_sql_netprofits["current_dt_minus2"]
-            current_dt_minus3 = data_sql_netprofits["current_dt_minus3"]
-            current_dt_minus4 = data_sql_netprofits["current_dt_minus4"]
-            sina_stock_url = data_sql_netprofits["sina_stock_url"]
-        except TypeError as e:
-            print(e)
+
 
     # get industry data
         if one_stock not in ["IXIC","INX"]:
+            # get netprofits
+            try:
+                connection = pymysql.connect(host='127.0.0.1', port=3306, user='root', password='123456', db='ForLynne',
+                                             charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
+                cur = connection.cursor()
+                # sql 语句
+                sql_netprofits = "select current_dt,current_dt_minus1,current_dt_minus2,current_dt_minus3,current_dt_minus4,sina_stock_url from sp_nas_netprofits_fromsina  where code = '{0}' ;  ".format(one_stock)
+                cur.executemany(sql_netprofits)
+                # #获取所有记录列表
+                data_sql_netprofits = cur.fetchone()
+                current_dt = data_sql_netprofits["current_dt"]
+                current_dt_minus1 = data_sql_netprofits["current_dt_minus1"]
+                current_dt_minus2 = data_sql_netprofits["current_dt_minus2"]
+                current_dt_minus3 = data_sql_netprofits["current_dt_minus3"]
+                current_dt_minus4 = data_sql_netprofits["current_dt_minus4"]
+                sina_stock_url = data_sql_netprofits["sina_stock_url"]
 
-            sql_industry_info = "select title_zh_cn,industry_infos,sector_infos from spplusnas_industry_infos where code = '{0}'   ".format(one_stock)
-            cur.execute(sql_industry_info)
-            # #获取所有记录列表
-            sql_industry_info = cur.fetchone()
-            print(sql_industry_info)
-            title_zh_cn = sql_industry_info["title_zh_cn"]
-            industry_infos = sql_industry_info["industry_infos"]
-            sector_infos = sql_industry_info["sector_infos"]
-            three_table_info = [title_zh_cn,one_stock,top30_item_dict[one_stock][0],industry_infos,sector_infos,current_dt,current_dt_minus1,current_dt_minus2,current_dt_minus3,current_dt_minus4,sina_stock_url]
-            writeinto_detail(top30_csvname, three_table_info)
-            cur.close()
+
+                sql_industry_info = "select title_zh_cn,industry_infos,sector_infos from spplusnas_industry_infos where code = '{0}'   ".format(one_stock)
+                cur.execute(sql_industry_info)
+                # #获取所有记录列表
+                sql_industry_info = cur.fetchone()
+                print(sql_industry_info)
+                title_zh_cn = sql_industry_info["title_zh_cn"]
+                industry_infos = sql_industry_info["industry_infos"]
+                sector_infos = sql_industry_info["sector_infos"]
+                three_table_info = [title_zh_cn,one_stock,top30_item_dict[one_stock][0],industry_infos,sector_infos,current_dt,current_dt_minus1,current_dt_minus2,current_dt_minus3,current_dt_minus4,sina_stock_url]
+                writeinto_detail(top30_csvname, three_table_info)
+                cur.close()
+            except TypeError as e:
+                print(e)
 
 
+# select current_dt,current_dt_minus1,current_dt_minus2,current_dt_minus3,current_dt_minus4,sina_stock_url from sp_nas_netprofits_fromsina  where code = 'UAL' ;
+# ['UAL', 'MTB', 'IBM', 'WDC', 'ETN', 'SNA', 'AAL', 'LKQ', 'NUE', 'DOW', 'ITW', 'HPE', 'RHI', 'JCI', 'MAS', 'DAL', 'COF', 'CMI', 'SYF', 'HBAN', 'GPC', 'HST', 'ISRG', 'CFG', 'RL', 'MMC', 'PCAR', 'MNST', 'TJX', 'INX']
 # ['FTI', 'PSX', 'SYF', 'CFG', 'IXIC', 'INX']
 # select industry_infos,sector_infos from spplusnas_industry_infos where code = 'INX'  ;
 
